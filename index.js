@@ -21,6 +21,8 @@ app.use(
   })
 );
 
+app.use("/api", require("./router/app.route"));
+
 connectDb();
 
 const port = process.env.PORT || 5000;
